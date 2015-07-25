@@ -953,6 +953,7 @@ WaveSchedule
 			WeaponRestrictions MeleeOnly
 			ClassIcon sentry_buster
 			Attributes MiniBoss
+			Attributes DisableDodge
 			CharacterAttributes
 			{
 				"move speed bonus" 2
