@@ -362,16 +362,18 @@ WaveSchedule
 		T_TFBot_Heavyweapons_Heater
 		{
 			Class Heavyweapons
+			Name "Giant Heavy"
 			ClassIcon heavy_heater_giant
 			Skill Expert
 			Health 5000
 			WeaponRestrictions PrimaryOnly
+			MaxVisionRange 1200
 			Item "The Huo Long Heatmaker"
 			Attributes MiniBoss
 			ItemAttributes
 			{
 				ItemName "The Huo Long Heatmaker"
-				"damage bonus"	1
+				"damage bonus"	1.5
 			}
 			CharacterAttributes
 			{
