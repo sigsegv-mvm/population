@@ -299,27 +299,30 @@ WaveSchedule
 		T_TFBot_Giant_Heavyweapons_HealOnKill // Air blast pushback on damage. Pins players, low damage, slow move speed
 		{
 			Class Heavyweapons
-			Name "Giant Heavy"
+			Name "Giant Heal-on-Kill Heavy"
 			ClassIcon heavy_deflector_healonkill
 			Skill Expert
-			Health 5000
+			Item "The Tungsten Toque"
+			Item "Deflector"
+			Health 5500
+			MaxVisionRange 1600
+			Attributes UseBossHealthBar
 			WeaponRestrictions PrimaryOnly
-			MaxVisionRange 1200
 			Attributes MiniBoss
 			ItemAttributes
 			{
 				ItemName "Deflector"
 				"damage bonus"	1.2
 				"attack projectiles" 2
-				// "weapon spread bonus" 1
-				// "fire rate penalty" 4
 				"heal on kill" 5000
 			}
 			CharacterAttributes
 			{
-				"move speed bonus"	0.35
+				"move speed bonus"	0.4
 				"damage force reduction" 0.3
-				"airblast vulnerability multiplier" 0.3
+				"airblast vulnerability multiplier" 0.4
+				"airblast vertical vulnerability multiplier" 0.1
+				"rage giving scale"	0.9
 				"override footstep sound set" 2
 			}
 		}
@@ -327,7 +330,7 @@ WaveSchedule
 		T_TFBot_Chief_Heavyweapons_HealOnKill // Air blast pushback on damage. Pins players, low damage, slow move speed
 		{
 			Class Heavyweapons
-			Name "Giant Heavy"
+			Name "Giant Heal-on-Kill Heavy"
 			ClassIcon heavy_deflector_healonkill
 			Skill Expert
 			Item "The Tungsten Toque"
@@ -343,8 +346,6 @@ WaveSchedule
 				ItemName "Deflector"
 				"damage bonus"	1.2
 				"attack projectiles" 2
-				// "weapon spread bonus" 1
-				// "fire rate penalty" 4
 				"heal on kill" 8000
 			}
 			CharacterAttributes
@@ -353,7 +354,7 @@ WaveSchedule
 				"damage force reduction" 0.3
 				"airblast vulnerability multiplier" 0.4
 				"airblast vertical vulnerability multiplier" 0.1
-				"rage giving scale"	0.9
+				"rage giving scale"	0.6
 				"override footstep sound set" 2
 			}
 		}
