@@ -117,11 +117,13 @@ WaveSchedule
 			}
 		}
 
+		//CHANGE Apparently there's a second variant of the giant rapid fire. I have no idea what's up here. But I gave it a hat too and changed the name a bit
 		T_TFBot_Giant_Demo_RapidFire
 		{
 			Class Demoman
-			Name "Giant Rapid Fire Demoman"
+			Name "Giant Fast Fire Demoman"
 			ClassIcon demo_giant
+			Item "Glengarry Bonnet"
 			Health 3000
 			Skill Expert
 			WeaponRestrictions PrimaryOnly
