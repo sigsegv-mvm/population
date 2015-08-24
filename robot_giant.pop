@@ -89,11 +89,13 @@ WaveSchedule
 			}
 		}
 
+		//CHANGE There's a large difference in combat between a stock giant demo and a rapid fire, so I gave the rapid fire a hat
 		T_TFBot_Giant_Demoman
 		{
 			Class Demoman
 			Name "Giant Rapid Fire Demoman"
 			ClassIcon demo_giant
+			Item "Glengarry Bonnet"
 			Skill Expert
 			Health 3300
 			WeaponRestrictions PrimaryOnly
