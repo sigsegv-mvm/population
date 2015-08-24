@@ -168,11 +168,13 @@ WaveSchedule
 			}
 		}
 
+		//CHANGE Gave it a mask
 		T_TFBot_Giant_Medic
 		{
 			Class Medic
 			Name "Giant Medic"
 			ClassIcon medic_giant
+			Item "Medic Mask"
 			Skill Expert
 			Health 4500
 			Attributes SpawnWithFullCharge
