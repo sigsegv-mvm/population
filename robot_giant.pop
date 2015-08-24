@@ -224,11 +224,13 @@ WaveSchedule
 			}
 		}
 
+		//CHANGE Gave it a permanent gatebot since that's how we always encounter them in mann-up. Easy recognition
 		T_TFBot_Giant_Heavyweapons_Shotgun
 		{
 			Class Heavyweapons
 			Name "Giant Shotgun Heavy"
 			ClassIcon heavy_shotgun
+			Item "MvM GateBot Light Heavy"
 			Skill Expert
 			Health 5000
 			WeaponRestrictions SecondaryOnly
