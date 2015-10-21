@@ -225,7 +225,7 @@ WaveSchedule
 			Name "Bowman Rapid Fire"
 			"scale" 1.5
 			Health 1200
-			ClassIcon sniper_bow
+			ClassIcon sniper_bow_multi
 
 			EventChangeAttributes
 			{

@@ -96,7 +96,7 @@ WaveSchedule
 			Class Sniper
 			Name "Bowman Rapid Fire"
 			Item "The Huntsman"
-			ClassIcon sniper_bow
+			ClassIcon sniper_bow_multi
 			Skill Hard
 			Health 1200
 			"scale" 1.5
