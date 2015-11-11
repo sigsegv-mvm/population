@@ -780,6 +780,7 @@ WaveSchedule
 			ClassIcon soldier_spammer
 			Health 3800
 			Skill Expert
+			Item "The Lucky Shot"	
 			WeaponRestrictions PrimaryOnly
 			Attributes MiniBoss
 			ItemAttributes
