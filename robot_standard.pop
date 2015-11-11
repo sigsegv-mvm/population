@@ -154,10 +154,16 @@ WaveSchedule
 			Class Scout
 			Name "Minor League Scout"
 			Skill Hard
+			Health 110
 			ClassIcon scout_stun
 			WeaponRestrictions MeleeOnly
 			Item "The Sandman"
 			Item "Batter's Helmet"
+			ItemAttributes
+			{
+				ItemName "The Sandman"
+				"max health additive penalty" -0
+			}
 		}
 
 		T_TFBot_Scout_Sandman_FastCharge
@@ -169,11 +175,12 @@ WaveSchedule
 			WeaponRestrictions MeleeOnly
 			Item "The Sandman"
 			Item "Batter's Helmet"
-
+			Health 110
 			ItemAttributes
 			{
 				ItemName "The Sandman"
 				"effect bar recharge rate increased" 0.25
+				"max health additive penalty" -0
 			}
 		}
 
@@ -191,6 +198,7 @@ WaveSchedule
 		{
 			Class scout
 			Skill Hard
+			Health 110
 			ClassIcon scout_jumping
 			WeaponRestrictions MeleeOnly
 			Item "The Sandman"
@@ -207,6 +215,7 @@ WaveSchedule
 			{
 				ItemName "The Sandman"
 				"effect bar recharge rate increased" 0.5
+				"max health additive penalty" -0
 			}
 		}
 
@@ -522,6 +531,7 @@ WaveSchedule
 			Name "Demoknight"
 			ClassIcon demoknight
 			Skill Hard
+			Health 150
 			Item "The Chargin' Targe"
 			Item "The Eyelander"
 			WeaponRestrictions MeleeOnly
@@ -529,6 +539,7 @@ WaveSchedule
 			{
 				ItemName "The Eyelander"
 				"critboost on kill" 3
+				"max health additive penalty" -0
 			}
 		}
 
