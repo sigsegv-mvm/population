@@ -982,10 +982,11 @@ WaveSchedule
 		T_TFBot_Soldier_BurstFire
 		{
 			Class Soldier
-			Name "Giant Burst Fire Soldier"
+			Name "Giga Burst Fire Soldier"
 			ClassIcon soldier_burstfire
 			Health 4200
 			Skill Expert
+			Item "Armored Authority"
 			WeaponRestrictions PrimaryOnly
 			Attributes MiniBoss
 			Attributes HoldFireUntilFullReload
