@@ -551,6 +551,11 @@ WaveSchedule
 				"effect bar recharge rate increased" 0.05
 				"max health additive penalty" -0
 			}
+			Itemattributes
+			{
+			Itemname "Batter's Helmet"
+			"set item tint RGB" 8289918
+			}
 			CharacterAttributes
 			{
 				"damage force reduction" 0.7
