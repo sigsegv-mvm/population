@@ -260,9 +260,10 @@ WaveSchedule
 		T_TFBot_Scout_Shortstop
 		{
 			Class Scout
-			Skill Easy
+			Skill Normal
 			ClassIcon scout_shortstop
 			Item "The Shortstop"
+			Item "The Milkman"
 			Name "Shortstop Scout"
 			Health 650
 			Scale 1.4
