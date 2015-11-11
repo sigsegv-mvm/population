@@ -398,7 +398,7 @@ WaveSchedule
 			Name "Super Scout"
 			ClassIcon scout_giant_fast
 			Skill Easy
-			Item "Bonk Boy"
+			Item "The Bolt Boy"
 			Item "The Holy Mackerel"
 			Health 1200
 			WeaponRestrictions MeleeOnly
