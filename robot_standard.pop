@@ -184,6 +184,11 @@ WaveSchedule
 				"effect bar recharge rate increased" 0.25
 				"max health additive penalty" -0
 			}
+			Itemattributes
+			{
+			Itemname "Batter's Helmet"
+			"set item tint RGB" 8626083
+			}
 		}
 
 		T_TFBot_Scout_Wrap_Assassin
