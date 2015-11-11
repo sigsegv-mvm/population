@@ -564,8 +564,10 @@ WaveSchedule
 		{
 			Class Scout
 			Skill Easy
+			Name "Giant Bonk! Scout"
 			Item "Bonk! Atomic Punch"
 			Item "Bonk Helm"
+			Item "The Atomizer"
 			WeaponRestrictions MeleeOnly
 			ClassIcon scout_bonk_giant
 			Health 1600
@@ -575,7 +577,7 @@ WaveSchedule
 				"damage force reduction" 0.7
 				"airblast vulnerability multiplier" 0.7
 				"override footstep sound set" 5
-				"effect bar recharge rate increased" 0.55
+				"effect bar recharge rate increased" 0.35
 			}
 		}
 
