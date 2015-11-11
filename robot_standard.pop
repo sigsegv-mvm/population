@@ -210,6 +210,7 @@ WaveSchedule
 			CharacterAttributes
 			{
 				"increased jump height" 2
+				"cancel falling damage" 1
 			}
 			ItemAttributes
 			{
@@ -573,6 +574,7 @@ WaveSchedule
 				"increased jump height" 2.3
 				"bot custom jump particle"	1
 				"damage bonus"	1.5
+				"cancel falling damage" 1
 			}
 		}
 
