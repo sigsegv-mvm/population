@@ -269,18 +269,14 @@ WaveSchedule
 		{
 			Class Medic
 			Name "Uber Medic"
+			Item "Medic Mask"
 			ClassIcon medic_uber
-			Skill Normal
+			Skill Hard
 			Attributes SpawnWithFullCharge
 			ItemAttributes
 			{
 				ItemName "TF_WEAPON_MEDIGUN"
 				"ubercharge rate bonus" 2
-			}
-			ItemAttributes
-			{
-				ItemName "TF_WEAPON_SYRINGEGUN_MEDIC"
-				"damage penalty" 0.1
 			}
 			CharacterAttributes
 			{
@@ -291,7 +287,7 @@ WaveSchedule
 		T_TFBot_Medic_QuickUber
 		{
 			Class Medic
-			Name "Uber Medic"
+			Name "Quick Uber Medic"
 			ClassIcon medic_uber
 			Skill Normal
 			Attributes SpawnWithFullCharge
@@ -300,11 +296,6 @@ WaveSchedule
 				ItemName "TF_WEAPON_MEDIGUN"
 				"ubercharge rate bonus" 5
 				"uber duration bonus" -3
-			}
-			ItemAttributes
-			{
-				ItemName "TF_WEAPON_SYRINGEGUN_MEDIC"
-				"damage penalty" 0.1
 			}
 			CharacterAttributes
 			{
@@ -315,18 +306,14 @@ WaveSchedule
 		T_TFBot_Medic_BigHeal
 		{
 			Class Medic
-			Name "Quick-Fix Medic"
-			Skill Normal
+			Name "Big Heal Medic"
+			Item "Otolaryngologist's Mirror"
+			Skill Hard
 			Item "The Quick-Fix"
 			ItemAttributes
 			{
 				ItemName "The Quick-Fix"
 				"ubercharge rate bonus" 0.1
-			}
-			ItemAttributes
-			{
-				ItemName "TF_WEAPON_SYRINGEGUN_MEDIC"
-				"damage penalty" 0.1
 			}
 			CharacterAttributes
 			{
@@ -340,29 +327,21 @@ WaveSchedule
 			Name "Quick-Fix Medic"
 			Skill Easy
 			Item "The Quick-Fix"
-			ItemAttributes
-			{
-				ItemName "TF_WEAPON_SYRINGEGUN_MEDIC"
-				"damage penalty" 0.1
-			}
 		}
 
 		T_TFBot_Medic_SlowRecharge
 		{
 			Class Medic
-			Name "Uber Medic"
+			Name "Slow Uber Medic"
 			ClassIcon medic_uber
-			Skill Normal
+			Skill Hard
+			Item "Practitioner's Processing Mask"
+			Item "Halogen Head Lamp"
 			Attributes SpawnWithFullCharge
 			ItemAttributes
 			{
 				ItemName "TF_WEAPON_MEDIGUN"
 				"ubercharge rate bonus" 0.25
-			}
-			ItemAttributes
-			{
-				ItemName "TF_WEAPON_SYRINGEGUN_MEDIC"
-				"damage penalty" 0.1
 			}
 			CharacterAttributes
 			{
