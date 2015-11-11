@@ -497,6 +497,7 @@ WaveSchedule
 			Class Heavyweapons
 			ClassIcon heavy_shotgun
 			Name "Heavy Shotgun"
+			Item "The Purity Fist"
 			Skill Hard
 			WeaponRestrictions SecondaryOnly
 			ItemAttributes
