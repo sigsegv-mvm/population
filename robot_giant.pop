@@ -804,6 +804,7 @@ WaveSchedule
 			Class Soldier
 			Name "Giant Burst Fire Soldier"
 			ClassIcon soldier_burstfire
+			Item "The Shogun's Shoulder Guard"
 			Health 3800
 			Skill Expert
 			WeaponRestrictions PrimaryOnly
