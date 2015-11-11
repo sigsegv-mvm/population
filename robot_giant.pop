@@ -467,6 +467,7 @@ WaveSchedule
 				ItemName "The Sandman"
 				"damage bonus"	2
 				"effect bar recharge rate increased" 0.1
+				"max health additive penalty" -0
 			}
 			CharacterAttributes
 			{
@@ -476,6 +477,7 @@ WaveSchedule
 				"airblast vulnerability multiplier" 0.7
 				"override footstep sound set" 5
 				"head scale" 1.5
+				"cancel falling damage" 1
 			}
 		}
 
@@ -522,6 +524,7 @@ WaveSchedule
 			{
 				ItemName "The Sandman"
 				"effect bar recharge rate increased" 0.1
+				"max health additive penalty" -0
 			}
 			CharacterAttributes
 			{
@@ -546,6 +549,7 @@ WaveSchedule
 			{
 				ItemName "The Sandman"
 				"effect bar recharge rate increased" 0.05
+				"max health additive penalty" -0
 			}
 			CharacterAttributes
 			{
