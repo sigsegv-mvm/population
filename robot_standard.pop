@@ -116,6 +116,7 @@ WaveSchedule
 		T_TFBot_Scout_Melee
 		{
 			Class Scout
+			Classicon scout_bat
 			Skill Hard // increased to improve ability to hit with melee
 			WeaponRestrictions MeleeOnly
 		}
