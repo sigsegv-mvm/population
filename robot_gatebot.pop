@@ -1966,7 +1966,7 @@ WaveSchedule
 		T_TFGateBot_Chief_Heavyweapons_HealOnKill
 		{
 			Class Heavyweapons
-			Name "Giant Heal-On-Kill Heavy"
+			Name "Chief Heal-On-Kill Heavy"
 			Health 70000
 			Scale 1.8
 			ClassIcon heavy_deflector_healonkill

@@ -338,7 +338,7 @@ WaveSchedule
 		T_TFBot_Chief_Heavyweapons_HealOnKill // Air blast pushback on damage. Pins players, low damage, slow move speed
 		{
 			Class Heavyweapons
-			Name "Giant Heal-on-Kill Heavy"
+			Name "Chief Heal-on-Kill Heavy"
 			ClassIcon heavy_deflector_healonkill
 			Skill Expert
 			Item "The Tungsten Toque"
