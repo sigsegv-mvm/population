@@ -258,7 +258,7 @@ WaveSchedule
 		T_TFBot_Giant_Heavyweapons_BrassBeast
 		{
 			Class Heavyweapons
-			Name "Giant Heavy"
+			Name "Giant Brass Beast Heavy"
 			ClassIcon heavy_giant
 			Item "The Brass Beast"
 			Skill Expert
@@ -283,7 +283,7 @@ WaveSchedule
 		T_TFBot_Giant_Heavyweapons_Natascha
 		{
 			Class Heavyweapons
-			Name "Giant Heavy"
+			Name "Giant Natascha Heavy"
 			ClassIcon heavy_giant
 			Item "Natascha"
 			Skill Expert
@@ -370,7 +370,7 @@ WaveSchedule
 		T_TFBot_Heavyweapons_Heater
 		{
 			Class Heavyweapons
-			Name "Giant Heavy"
+			Name "Giant Heater Heavy"
 			ClassIcon heavy_heater_giant
 			Skill Expert
 			Health 5000
