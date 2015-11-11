@@ -713,6 +713,7 @@ WaveSchedule
 		{
 			Class Demoman
 			Name "Giant Burst Fire Demo"
+			Item "Scotch Bonnet"
 			ClassIcon demo_burst_giant
 			Health 3300
 			Skill Expert
