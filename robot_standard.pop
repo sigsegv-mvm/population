@@ -142,9 +142,11 @@ WaveSchedule
 		T_TFBot_Scout_Bonk
 		{
 			Class Scout
-			Skill Hard
+			Skill Easy
+			Name "Bonk! Scout"
 			Item "Bonk! Atomic Punch"
 			Item "Bonk Helm"
+			Item "The Atomizer"
 			WeaponRestrictions MeleeOnly
 			ClassIcon scout_bonk
 		}
