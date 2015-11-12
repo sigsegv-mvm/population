@@ -244,7 +244,6 @@ WaveSchedule
 			Skill Expert
 			ClassIcon scout_fan
 			Name "Force-A-Nature Scout"
-			Item "The Fed-Fightin' Fedora"
 			Item "The Bolt Boy"
 			Item "The Force-a-Nature"
 			MaxVisionRange 500

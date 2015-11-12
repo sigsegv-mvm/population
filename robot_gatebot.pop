@@ -130,7 +130,6 @@ WaveSchedule
 
 					Item "MvM GateBot Light Scout"
 					Skill Expert
-					Item "The Fed-Fightin' Fedora"
 					Item "The Bolt Boy"
 					Item "The Force-a-Nature"
 					MaxVisionRange 500
@@ -151,7 +150,6 @@ WaveSchedule
 						"item style override" 1
 					}
 					Skill Expert
-					Item "The Fed-Fightin' Fedora"
 					Item "The Bolt Boy"
 					Item "The Force-a-Nature"
 					MaxVisionRange 500
@@ -183,7 +181,6 @@ WaveSchedule
 					Attributes AlwaysCrit
 					Item "MvM GateBot Light Scout"
 					Skill Expert
-					Item "The Fed-Fightin' Fedora"
 					Item "The Bolt Boy"
 					Item "The Force-a-Nature"
 					MaxVisionRange 750
@@ -205,7 +202,6 @@ WaveSchedule
 						"item style override" 1
 					}
 					Skill Expert
-					Item "The Fed-Fightin' Fedora"
 					Item "The Bolt Boy"
 					Item "The Force-a-Nature"
 					MaxVisionRange 500
@@ -2636,7 +2632,6 @@ WaveSchedule
 					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
-					Item "The Fed-Fightin' Fedora"
 					Item "The Bolt Boy"
 					Item "The Force-a-Nature"
 					Item "MvM GateBot Light Scout"
@@ -2666,7 +2661,6 @@ WaveSchedule
 				}
 				RevertGateBotsBehavior
 				{
-					Item "The Fed-Fightin' Fedora"
 					Item "The Bolt Boy"
 					Item "The Force-a-Nature"
 					Item "MvM GateBot Light Scout"

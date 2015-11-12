@@ -418,7 +418,6 @@ WaveSchedule
 			Name "Force-a-Nature Super Scout"
 			ClassIcon scout_fan_giant
 			Skill Hard
-			Item "The Fed-Fightin' Fedora"
 			Item "The Bolt Boy"
 			Item "The Force-a-Nature"
 			Health 1200
