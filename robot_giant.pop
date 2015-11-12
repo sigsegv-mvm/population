@@ -1254,6 +1254,7 @@ WaveSchedule
 			Skill Expert
 			WeaponRestrictions PrimaryOnly
 			Item "The Liberty Launcher"
+			Item "Jumper's Jeepcap"
 			ClassIcon soldier_libertylauncher
 			Attributes MiniBoss
 			Attributes UseBossHealthBar
