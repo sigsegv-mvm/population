@@ -1328,7 +1328,8 @@ WaveSchedule
 		{
 			Class Demoman
 			Name "Sir Nukesalot"
-			ClassIcon demo_giant
+			Item "Rimmed Raincatcher"
+			ClassIcon demo_bomber
 			Health 50000
 			Scale 1.9
 			Skill Expert
