@@ -834,7 +834,7 @@ WaveSchedule
 			WaitForAllSpawned "stage3"
 			
 			Where spawnbot
-			TotalCount 18
+			TotalCount 20
 			SpawnCount 4
 			MaxActive 8
 			WaitBetweenSpawns 5
