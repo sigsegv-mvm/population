@@ -96,7 +96,7 @@ WaveSchedule
 			Class Sniper
 			Name "Bowman Rapid Fire"
 			Item "The Huntsman"
-			ClassIcon sniper_bow_multi
+			ClassIcon sniper_bow
 			Skill Hard
 			Health 1200
 			"scale" 1.5
@@ -116,7 +116,6 @@ WaveSchedule
 		T_TFBot_Scout_Melee
 		{
 			Class Scout
-			Classicon scout_bat
 			Skill Hard // increased to improve ability to hit with melee
 			WeaponRestrictions MeleeOnly
 		}
@@ -142,11 +141,9 @@ WaveSchedule
 		T_TFBot_Scout_Bonk
 		{
 			Class Scout
-			Skill Easy
-			Name "Bonk! Scout"
+			Skill Hard
 			Item "Bonk! Atomic Punch"
 			Item "Bonk Helm"
-			Item "The Atomizer"
 			WeaponRestrictions MeleeOnly
 			ClassIcon scout_bonk
 		}
@@ -156,16 +153,10 @@ WaveSchedule
 			Class Scout
 			Name "Minor League Scout"
 			Skill Hard
-			Health 110
 			ClassIcon scout_stun
 			WeaponRestrictions MeleeOnly
 			Item "The Sandman"
 			Item "Batter's Helmet"
-			ItemAttributes
-			{
-				ItemName "The Sandman"
-				"max health additive penalty" -0
-			}
 		}
 
 		T_TFBot_Scout_Sandman_FastCharge
@@ -177,17 +168,11 @@ WaveSchedule
 			WeaponRestrictions MeleeOnly
 			Item "The Sandman"
 			Item "Batter's Helmet"
-			Health 110
+
 			ItemAttributes
 			{
 				ItemName "The Sandman"
 				"effect bar recharge rate increased" 0.25
-				"max health additive penalty" -0
-			}
-			Itemattributes
-			{
-			Itemname "Batter's Helmet"
-			"set item tint RGB" 8626083
 			}
 		}
 
@@ -205,7 +190,6 @@ WaveSchedule
 		{
 			Class scout
 			Skill Hard
-			Health 110
 			ClassIcon scout_jumping
 			WeaponRestrictions MeleeOnly
 			Item "The Sandman"
@@ -217,13 +201,11 @@ WaveSchedule
 			CharacterAttributes
 			{
 				"increased jump height" 2
-				"cancel falling damage" 1
 			}
 			ItemAttributes
 			{
 				ItemName "The Sandman"
 				"effect bar recharge rate increased" 0.5
-				"max health additive penalty" -0
 			}
 		}
 
@@ -244,6 +226,7 @@ WaveSchedule
 			Skill Expert
 			ClassIcon scout_fan
 			Name "Force-A-Nature Scout"
+			Item "The Fed-Fightin' Fedora"
 			Item "The Bolt Boy"
 			Item "The Force-a-Nature"
 			MaxVisionRange 500
@@ -259,10 +242,9 @@ WaveSchedule
 		T_TFBot_Scout_Shortstop
 		{
 			Class Scout
-			Skill Normal
+			Skill Easy
 			ClassIcon scout_shortstop
 			Item "The Shortstop"
-			Item "The Milkman"
 			Name "Shortstop Scout"
 			Health 650
 			Scale 1.4
@@ -286,14 +268,18 @@ WaveSchedule
 		{
 			Class Medic
 			Name "Uber Medic"
-			Item "Medic Mask"
 			ClassIcon medic_uber
-			Skill Hard
+			Skill Normal
 			Attributes SpawnWithFullCharge
 			ItemAttributes
 			{
 				ItemName "TF_WEAPON_MEDIGUN"
 				"ubercharge rate bonus" 2
+			}
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_SYRINGEGUN_MEDIC"
+				"damage penalty" 0.1
 			}
 			CharacterAttributes
 			{
@@ -304,7 +290,7 @@ WaveSchedule
 		T_TFBot_Medic_QuickUber
 		{
 			Class Medic
-			Name "Quick Uber Medic"
+			Name "Uber Medic"
 			ClassIcon medic_uber
 			Skill Normal
 			Attributes SpawnWithFullCharge
@@ -313,6 +299,11 @@ WaveSchedule
 				ItemName "TF_WEAPON_MEDIGUN"
 				"ubercharge rate bonus" 5
 				"uber duration bonus" -3
+			}
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_SYRINGEGUN_MEDIC"
+				"damage penalty" 0.1
 			}
 			CharacterAttributes
 			{
@@ -323,14 +314,18 @@ WaveSchedule
 		T_TFBot_Medic_BigHeal
 		{
 			Class Medic
-			Name "Big Heal Medic"
-			Item "Otolaryngologist's Mirror"
-			Skill Hard
+			Name "Quick-Fix Medic"
+			Skill Normal
 			Item "The Quick-Fix"
 			ItemAttributes
 			{
 				ItemName "The Quick-Fix"
 				"ubercharge rate bonus" 0.1
+			}
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_SYRINGEGUN_MEDIC"
+				"damage penalty" 0.1
 			}
 			CharacterAttributes
 			{
@@ -344,21 +339,29 @@ WaveSchedule
 			Name "Quick-Fix Medic"
 			Skill Easy
 			Item "The Quick-Fix"
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_SYRINGEGUN_MEDIC"
+				"damage penalty" 0.1
+			}
 		}
 
 		T_TFBot_Medic_SlowRecharge
 		{
 			Class Medic
-			Name "Slow Uber Medic"
+			Name "Uber Medic"
 			ClassIcon medic_uber
-			Skill Hard
-			Item "Practitioner's Processing Mask"
-			Item "Halogen Head Lamp"
+			Skill Normal
 			Attributes SpawnWithFullCharge
 			ItemAttributes
 			{
 				ItemName "TF_WEAPON_MEDIGUN"
 				"ubercharge rate bonus" 0.25
+			}
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_SYRINGEGUN_MEDIC"
+				"damage penalty" 0.1
 			}
 			CharacterAttributes
 			{
@@ -496,7 +499,6 @@ WaveSchedule
 			Class Heavyweapons
 			ClassIcon heavy_shotgun
 			Name "Heavy Shotgun"
-			Item "The Purity Fist"
 			Skill Hard
 			WeaponRestrictions SecondaryOnly
 			ItemAttributes
@@ -540,7 +542,6 @@ WaveSchedule
 			Name "Demoknight"
 			ClassIcon demoknight
 			Skill Hard
-			Health 150
 			Item "The Chargin' Targe"
 			Item "The Eyelander"
 			WeaponRestrictions MeleeOnly
@@ -548,7 +549,6 @@ WaveSchedule
 			{
 				ItemName "The Eyelander"
 				"critboost on kill" 3
-				"max health additive penalty" -0
 			}
 		}
 
@@ -582,7 +582,6 @@ WaveSchedule
 				"increased jump height" 2.3
 				"bot custom jump particle"	1
 				"damage bonus"	1.5
-				"cancel falling damage" 1
 			}
 		}
 
@@ -591,7 +590,6 @@ WaveSchedule
 			Class Demoman
 			Name "Burst Fire Demo"
 			ClassIcon demo_burst
-			Item "Scotch Bonnet"
 			Skill Expert
 			WeaponRestrictions PrimaryOnly
 			Attributes HoldFireUntilFullReload

@@ -1069,7 +1069,7 @@ WaveSchedule
 				{
 					Template T_TFBot_Giant_Heavyweapons_Deflector
 					Attributes AlwaysCrit
-					Item "The Crone's Dome"
+					Item "Witch Hat"
 				}
 				TFBot
 				{

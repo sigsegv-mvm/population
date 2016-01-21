@@ -130,7 +130,8 @@ WaveSchedule
 
 					Item "MvM GateBot Light Scout"
 					Skill Expert
-					Item "The Bolt Boy"
+					// Item "The Fed-Fightin' Fedora"
+					// Item "The Bolt Boy"
 					Item "The Force-a-Nature"
 					MaxVisionRange 500
 					ItemAttributes
@@ -150,7 +151,8 @@ WaveSchedule
 						"item style override" 1
 					}
 					Skill Expert
-					Item "The Bolt Boy"
+					// Item "The Fed-Fightin' Fedora"
+					// Item "The Bolt Boy"
 					Item "The Force-a-Nature"
 					MaxVisionRange 500
 					ItemAttributes
@@ -181,7 +183,8 @@ WaveSchedule
 					Attributes AlwaysCrit
 					Item "MvM GateBot Light Scout"
 					Skill Expert
-					Item "The Bolt Boy"
+					// Item "The Fed-Fightin' Fedora"
+					// Item "The Bolt Boy"
 					Item "The Force-a-Nature"
 					MaxVisionRange 750
 					ItemAttributes
@@ -202,7 +205,8 @@ WaveSchedule
 						"item style override" 1
 					}
 					Skill Expert
-					Item "The Bolt Boy"
+					// Item "The Fed-Fightin' Fedora"
+					// Item "The Bolt Boy"
 					Item "The Force-a-Nature"
 					MaxVisionRange 500
 					ItemAttributes
@@ -221,7 +225,7 @@ WaveSchedule
 			Name "Bowman Rapid Fire"
 			"scale" 1.5
 			Health 1200
-			ClassIcon sniper_bow_multi
+			ClassIcon sniper_bow
 
 			EventChangeAttributes
 			{
@@ -1237,11 +1241,7 @@ WaveSchedule
 					WeaponRestrictions MeleeOnly
 					Tag bot_giant
 					Skill Hard
-					ItemAttributes
-					{
-						ItemName "Fists of Steel"
-						//"damage bonus" 1.5
-					}
+
 				}
 				RevertGateBotsBehavior
 				{
@@ -1252,14 +1252,16 @@ WaveSchedule
 						ItemName "MvM GateBot Light Heavy"
 						"item style override" 1
 					}
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_ROCKETLAUNCHER"
+						"faster reload rate" -0.8
+						"fire rate bonus" 0.5
+
+					}
 					WeaponRestrictions MeleeOnly
 					Tag bot_giant
 					Skill Hard
-					ItemAttributes
-					{
-						ItemName "Fists of Steel"
-						//"damage bonus" 1.5
-					}
 				}
 			}
 		}
@@ -1338,11 +1340,7 @@ WaveSchedule
 					WeaponRestrictions MeleeOnly
 					Tag bot_giant
 					Skill Hard
-					ItemAttributes
-					{
-						ItemName "Fists of Steel"
-						//"damage bonus" 1.5
-					}
+
 				}
 				RevertGateBotsBehavior
 				{
@@ -1353,15 +1351,17 @@ WaveSchedule
 						ItemName "MvM GateBot Light Heavy"
 						"item style override" 1
 					}
+					ItemAttributes
+					{
+						ItemName "TF_WEAPON_ROCKETLAUNCHER"
+						"faster reload rate" -0.8
+						"fire rate bonus" 0.5
+
+					}
 					Attributes AlwaysCrit
 					WeaponRestrictions MeleeOnly
 					Tag bot_giant
 					Skill Hard
-					ItemAttributes
-					{
-						ItemName "Fists of Steel"
-						//"damage bonus" 1.5
-					}
 				}
 			}
 		}
@@ -1408,7 +1408,7 @@ WaveSchedule
 						"override footstep sound set" 3
 						"airblast vertical vulnerability multiplier" 0.1
 						"rage giving scale" 0.1
-						"Projectile speed increased" 0.35
+						"Projectile speed increased" 0.4
 					}
 				}
 				RevertGateBotsBehavior
@@ -1443,8 +1443,8 @@ WaveSchedule
 						"airblast vulnerability multiplier" 0.4
 						"override footstep sound set" 3
 						"airblast vertical vulnerability multiplier" 0.1
-						"rage giving scale" 0.2
-						"Projectile speed increased" 0.35
+						"rage giving scale" 0.1
+						"Projectile speed increased" 0.4
 					}
 				}
 			}
@@ -1476,7 +1476,7 @@ WaveSchedule
 					{
 						ItemName "TF_WEAPON_ROCKETLAUNCHER"
 						"clip size upgrade atomic" 26.0
-						"faster reload rate" 0.4
+						"faster reload rate" 0.22
 						"fire rate bonus" 0.2
 						"projectile spread angle penalty" 5
 					}
@@ -1488,8 +1488,9 @@ WaveSchedule
 						"damage force reduction" 0.4
 						"airblast vulnerability multiplier" 0.4
 						"override footstep sound set" 3
-						"airblast vertical vulnerability multiplier" 0.1				
-						"Projectile speed increased" 0.35
+						"airblast vertical vulnerability multiplier" 0.1
+						"rage giving scale" 0.1
+						"Projectile speed increased" 0.4
 					}
 				}
 				RevertGateBotsBehavior
@@ -1510,7 +1511,7 @@ WaveSchedule
 					{
 						ItemName "TF_WEAPON_ROCKETLAUNCHER"
 						"clip size upgrade atomic" 26.0
-						"faster reload rate" 0.4
+						"faster reload rate" 0.22
 						"fire rate bonus" 0.2
 						"projectile spread angle penalty" 5
 					}
@@ -1522,8 +1523,9 @@ WaveSchedule
 						"damage force reduction" 0.4
 						"airblast vulnerability multiplier" 0.4
 						"override footstep sound set" 3
-						"airblast vertical vulnerability multiplier" 0.1			
-						"Projectile speed increased" 0.35
+						"airblast vertical vulnerability multiplier" 0.1
+						"rage giving scale" 0.1
+						"Projectile speed increased" 0.4
 					}
 				}
 			}
@@ -1567,6 +1569,7 @@ WaveSchedule
 						"airblast vulnerability multiplier" 0.4
 						"override footstep sound set" 3
 						"airblast vertical vulnerability multiplier" 0.1
+						"rage giving scale" 0.1
 						"Projectile speed increased" 0.4
 					}
 				}
@@ -1962,7 +1965,7 @@ WaveSchedule
 		T_TFGateBot_Chief_Heavyweapons_HealOnKill
 		{
 			Class Heavyweapons
-			Name "Chief Heal-On-Kill Heavy"
+			Name "Giant Heal-On-Kill Heavy"
 			Health 70000
 			Scale 1.8
 			ClassIcon heavy_deflector_healonkill
@@ -2000,7 +2003,7 @@ WaveSchedule
 						"damage force reduction" 0.3
 						"airblast vulnerability multiplier" 0.4
 						"airblast vertical vulnerability multiplier" 0.1
-						"rage giving scale"	0.6
+						"rage giving scale"	0.9
 						"override footstep sound set" 2
 					}
 				}
@@ -2033,7 +2036,7 @@ WaveSchedule
 						"damage force reduction" 0.3
 						"airblast vulnerability multiplier" 0.4
 						"airblast vertical vulnerability multiplier" 0.1
-						"rage giving scale"	0.6
+						"rage giving scale"	0.9
 						"override footstep sound set" 2
 					}
 				}
@@ -2632,6 +2635,7 @@ WaveSchedule
 					Tag nav_prefer_gate1_flank 		// having these will cause bots to run towards gates
 					Tag bot_gatebot 				// having these will cause bots to run towards gates
 
+					// Item "The Fed-Fightin' Fedora"
 					Item "The Bolt Boy"
 					Item "The Force-a-Nature"
 					Item "MvM GateBot Light Scout"
@@ -2661,6 +2665,7 @@ WaveSchedule
 				}
 				RevertGateBotsBehavior
 				{
+					// Item "The Fed-Fightin' Fedora"
 					Item "The Bolt Boy"
 					Item "The Force-a-Nature"
 					Item "MvM GateBot Light Scout"

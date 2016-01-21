@@ -89,13 +89,11 @@ WaveSchedule
 			}
 		}
 
-		//CHANGE There's a large difference in combat between a stock giant demo and a rapid fire, so I gave the rapid fire a hat
 		T_TFBot_Giant_Demoman
 		{
 			Class Demoman
 			Name "Giant Rapid Fire Demoman"
 			ClassIcon demo_giant
-			Item "Glengarry Bonnet"
 			Skill Expert
 			Health 3300
 			WeaponRestrictions PrimaryOnly
@@ -117,13 +115,11 @@ WaveSchedule
 			}
 		}
 
-		//CHANGE Apparently there's a second variant of the giant rapid fire. I have no idea what's up here. But I gave it a hat too and changed the name a bit
 		T_TFBot_Giant_Demo_RapidFire
 		{
 			Class Demoman
-			Name "Giant Fast Fire Demoman"
+			Name "Giant Rapid Fire Demoman"
 			ClassIcon demo_giant
-			Item "Glengarry Bonnet"
 			Health 3000
 			Skill Expert
 			WeaponRestrictions PrimaryOnly
@@ -168,13 +164,11 @@ WaveSchedule
 			}
 		}
 
-		//CHANGE Gave it a mask
 		T_TFBot_Giant_Medic
 		{
 			Class Medic
 			Name "Giant Medic"
 			ClassIcon medic_giant
-			Item "Medic Mask"
 			Skill Expert
 			Health 4500
 			Attributes SpawnWithFullCharge
@@ -224,13 +218,11 @@ WaveSchedule
 			}
 		}
 
-		//CHANGE Gave it a permanent gatebot since that's how we always encounter them in mann-up. Easy recognition
 		T_TFBot_Giant_Heavyweapons_Shotgun
 		{
 			Class Heavyweapons
 			Name "Giant Shotgun Heavy"
 			ClassIcon heavy_shotgun
-			Item "MvM GateBot Light Heavy"
 			Skill Expert
 			Health 5000
 			WeaponRestrictions SecondaryOnly
@@ -258,7 +250,7 @@ WaveSchedule
 		T_TFBot_Giant_Heavyweapons_BrassBeast
 		{
 			Class Heavyweapons
-			Name "Giant Brass Beast Heavy"
+			Name "Giant Heavy"
 			ClassIcon heavy_giant
 			Item "The Brass Beast"
 			Skill Expert
@@ -283,7 +275,7 @@ WaveSchedule
 		T_TFBot_Giant_Heavyweapons_Natascha
 		{
 			Class Heavyweapons
-			Name "Giant Natascha Heavy"
+			Name "Giant Heavy"
 			ClassIcon heavy_giant
 			Item "Natascha"
 			Skill Expert
@@ -307,30 +299,27 @@ WaveSchedule
 		T_TFBot_Giant_Heavyweapons_HealOnKill // Air blast pushback on damage. Pins players, low damage, slow move speed
 		{
 			Class Heavyweapons
-			Name "Giant Heal-on-Kill Heavy"
+			Name "Giant Heavy"
 			ClassIcon heavy_deflector_healonkill
 			Skill Expert
-			Item "The Tungsten Toque"
-			Item "Deflector"
-			Health 5500
-			MaxVisionRange 1600
-			Attributes UseBossHealthBar
+			Health 5000
 			WeaponRestrictions PrimaryOnly
+			MaxVisionRange 1200
 			Attributes MiniBoss
 			ItemAttributes
 			{
 				ItemName "Deflector"
 				"damage bonus"	1.2
 				"attack projectiles" 2
+				// "weapon spread bonus" 1
+				// "fire rate penalty" 4
 				"heal on kill" 5000
 			}
 			CharacterAttributes
 			{
-				"move speed bonus"	0.4
+				"move speed bonus"	0.35
 				"damage force reduction" 0.3
-				"airblast vulnerability multiplier" 0.4
-				"airblast vertical vulnerability multiplier" 0.1
-				"rage giving scale"	0.9
+				"airblast vulnerability multiplier" 0.3
 				"override footstep sound set" 2
 			}
 		}
@@ -338,7 +327,7 @@ WaveSchedule
 		T_TFBot_Chief_Heavyweapons_HealOnKill // Air blast pushback on damage. Pins players, low damage, slow move speed
 		{
 			Class Heavyweapons
-			Name "Chief Heal-on-Kill Heavy"
+			Name "Giant Heavy"
 			ClassIcon heavy_deflector_healonkill
 			Skill Expert
 			Item "The Tungsten Toque"
@@ -354,6 +343,8 @@ WaveSchedule
 				ItemName "Deflector"
 				"damage bonus"	1.2
 				"attack projectiles" 2
+				// "weapon spread bonus" 1
+				// "fire rate penalty" 4
 				"heal on kill" 8000
 			}
 			CharacterAttributes
@@ -362,7 +353,7 @@ WaveSchedule
 				"damage force reduction" 0.3
 				"airblast vulnerability multiplier" 0.4
 				"airblast vertical vulnerability multiplier" 0.1
-				"rage giving scale"	0.6
+				"rage giving scale"	0.9
 				"override footstep sound set" 2
 			}
 		}
@@ -370,18 +361,16 @@ WaveSchedule
 		T_TFBot_Heavyweapons_Heater
 		{
 			Class Heavyweapons
-			Name "Giant Heater Heavy"
 			ClassIcon heavy_heater_giant
 			Skill Expert
 			Health 5000
 			WeaponRestrictions PrimaryOnly
-			MaxVisionRange 1200
 			Item "The Huo Long Heatmaker"
 			Attributes MiniBoss
 			ItemAttributes
 			{
 				ItemName "The Huo Long Heatmaker"
-				"damage bonus"	1.5
+				"damage bonus"	1
 			}
 			CharacterAttributes
 			{
@@ -398,7 +387,7 @@ WaveSchedule
 			Name "Super Scout"
 			ClassIcon scout_giant_fast
 			Skill Easy
-			Item "The Bolt Boy"
+			Item "Bonk Boy"
 			Item "The Holy Mackerel"
 			Health 1200
 			WeaponRestrictions MeleeOnly
@@ -418,6 +407,7 @@ WaveSchedule
 			Name "Force-a-Nature Super Scout"
 			ClassIcon scout_fan_giant
 			Skill Hard
+			Item "The Fed-Fightin' Fedora"
 			Item "The Bolt Boy"
 			Item "The Force-a-Nature"
 			Health 1200
@@ -466,7 +456,6 @@ WaveSchedule
 				ItemName "The Sandman"
 				"damage bonus"	2
 				"effect bar recharge rate increased" 0.1
-				"max health additive penalty" -0
 			}
 			CharacterAttributes
 			{
@@ -476,7 +465,6 @@ WaveSchedule
 				"airblast vulnerability multiplier" 0.7
 				"override footstep sound set" 5
 				"head scale" 1.5
-				"cancel falling damage" 1
 			}
 		}
 
@@ -523,7 +511,6 @@ WaveSchedule
 			{
 				ItemName "The Sandman"
 				"effect bar recharge rate increased" 0.1
-				"max health additive penalty" -0
 			}
 			CharacterAttributes
 			{
@@ -548,12 +535,6 @@ WaveSchedule
 			{
 				ItemName "The Sandman"
 				"effect bar recharge rate increased" 0.05
-				"max health additive penalty" -0
-			}
-			Itemattributes
-			{
-			Itemname "Batter's Helmet"
-			"set item tint RGB" 8289918
 			}
 			CharacterAttributes
 			{
@@ -568,10 +549,8 @@ WaveSchedule
 		{
 			Class Scout
 			Skill Easy
-			Name "Giant Bonk! Scout"
 			Item "Bonk! Atomic Punch"
 			Item "Bonk Helm"
-			Item "The Atomizer"
 			WeaponRestrictions MeleeOnly
 			ClassIcon scout_bonk_giant
 			Health 1600
@@ -719,7 +698,6 @@ WaveSchedule
 		{
 			Class Demoman
 			Name "Giant Burst Fire Demo"
-			Item "Scotch Bonnet"
 			ClassIcon demo_burst_giant
 			Health 3300
 			Skill Expert
@@ -787,7 +765,6 @@ WaveSchedule
 			ClassIcon soldier_spammer
 			Health 3800
 			Skill Expert
-			Item "The Lucky Shot"	
 			WeaponRestrictions PrimaryOnly
 			Attributes MiniBoss
 			ItemAttributes
@@ -812,7 +789,6 @@ WaveSchedule
 			Class Soldier
 			Name "Giant Burst Fire Soldier"
 			ClassIcon soldier_burstfire
-			Item "The Shogun's Shoulder Guard"
 			Health 3800
 			Skill Expert
 			WeaponRestrictions PrimaryOnly
@@ -977,7 +953,6 @@ WaveSchedule
 			WeaponRestrictions MeleeOnly
 			ClassIcon sentry_buster
 			Attributes MiniBoss
-			Attributes DisableDodge
 			CharacterAttributes
 			{
 				"move speed bonus" 2
@@ -991,11 +966,10 @@ WaveSchedule
 		T_TFBot_Soldier_BurstFire
 		{
 			Class Soldier
-			Name "Giga Burst Fire Soldier"
+			Name "Giant Burst Fire Soldier"
 			ClassIcon soldier_burstfire
 			Health 4200
 			Skill Expert
-			Item "Armored Authority"
 			WeaponRestrictions PrimaryOnly
 			Attributes MiniBoss
 			Attributes HoldFireUntilFullReload
@@ -1046,7 +1020,8 @@ WaveSchedule
 				"damage force reduction" 0.4
 				"airblast vulnerability multiplier" 0.4
 				"override footstep sound set" 3
-				"airblast vertical vulnerability multiplier" 0.1			
+				"airblast vertical vulnerability multiplier" 0.1
+				"rage giving scale" 0.1
 				"Projectile speed increased" 0.4
 			}
 		}
@@ -1254,7 +1229,6 @@ WaveSchedule
 			Skill Expert
 			WeaponRestrictions PrimaryOnly
 			Item "The Liberty Launcher"
-			Item "Jumper's Jeepcap"
 			ClassIcon soldier_libertylauncher
 			Attributes MiniBoss
 			Attributes UseBossHealthBar
@@ -1329,8 +1303,7 @@ WaveSchedule
 		{
 			Class Demoman
 			Name "Sir Nukesalot"
-			Item "Rimmed Raincatcher"
-			ClassIcon demo_bomber
+			ClassIcon demo_giant
 			Health 50000
 			Scale 1.9
 			Skill Expert
