@@ -956,9 +956,9 @@ WaveSchedule
 			Where spawnbot_main0
 			Where spawnbot_main1
 			Where spawnbot_main2 //spawnbot_main2_giants
-			TotalCount 21
-			MaxActive 7
-			SpawnCount 7
+			TotalCount 18
+			MaxActive 6
+			SpawnCount 6
 			WaitBetweenSpawns 0
 			WaitBeforeStarting 10
 			RandomSpawn 1
